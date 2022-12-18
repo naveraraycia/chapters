@@ -132,7 +132,7 @@ function Home() {
         <div className="flex flex-col space-y-2 items-center justify-center w-full py-14 px-10 bg-darkBlueGreen font-sans text-white rounded-[50px] md:px-16">
           <p className="text-3xl text-center font-extrabold xl:text-3xl">Random Quote</p>
           {isSuccessQuote ? (
-            <p className="font-semibold text-md text-center leading-[181.5%] md:text-xl">{dataQuote ? dataQuote.content : ''}</p>
+            <p className="font-semibold text-md text-center leading-[181.5%] md:text-xl">{dataQuote ? dataQuote.text : ''}</p>
           ): (
             <p className="font-semibold text-lg text-center leading-[181.5%] md:text-xl">Never be afraid to trust an unknown future to a known God.</p>
           )}

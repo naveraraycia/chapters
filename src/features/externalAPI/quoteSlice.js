@@ -13,15 +13,13 @@ const initialState = {
 
 export const quoteAPI = createAsyncThunk('externalAPI/quoteAPI', async(thunkAPI)=> {
   try {
-    const response = await axios.get('https://quotes15.p.rapidapi.com/quotes/random/', {
-      headers: {
-        'X-RapidAPI-Key': '19a70c2dd2msh60a832c19480d6ap17cdadjsn1ebc00320e7d',
-        'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
-      }} )
 
-      localStorage.setItem('quoteAPI', JSON.stringify(response.data))
+      const response = await axios.get('https://type.fit/api/quotes')
+      const randomQuote = Math.floor(Math.random()* response.data.length)
+      const quote = response.data[randomQuote]
+      localStorage.setItem('quoteAPI', JSON.stringify(quote))
 
-      return response.data
+      return quote
   } catch(error){
     return thunkAPI.rejectWithValue(error)
 
