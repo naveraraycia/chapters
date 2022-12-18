@@ -142,15 +142,17 @@ function Home() {
           <div className="flex flex-col mt-20 space-y-10">
             <p className="font-black text-darkBlueGreen text-3xl text-center sm:text-left md:text-4xl">Your chapter entries</p>
             
-            <div className='flex flex-col space-y-10'>
-              {entries.map((entryItem)=>(
-                   <Link key={entryItem.id} to={`/chapter/${entryItem.id}`}>
-                   <DiaryEntry key={entryItem.id} data={entryItem.data} timestamp={entryItem.timestamp} />
-                 </Link>
-              ))}
-              
-          
-            </div>
+            {entries && entries.length > 0 ? (
+              <div className='flex flex-col space-y-10'>
+                {entries.map((entryItem)=>(
+                    <Link key={entryItem.id} to={`/chapter/${entryItem.id}`}>
+                    <DiaryEntry key={entryItem.id} data={entryItem.data} timestamp={entryItem.timestamp} />
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <p className="font-semibold text-center text-xl text-darkBlueGreen sm:text-left">No chapter entries yet</p>
+            )}
           </div>
         </section>
       </div>
