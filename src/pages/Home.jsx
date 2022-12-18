@@ -64,11 +64,11 @@ function Home() {
   }
 
   return (
-    <>
+    <div className='flex flex-col justify-between min-h-screen'>
       <Navbar />
 
-      <div className='flex flex-col items-center justify-center space-y-10 px-5 pt-0 pb-10 md:pb-16 md:px-36'>
-        <div className="bg-white p-10 md:py-12 md:px-20 rounded-[50px] font-sans text-darkBlueGreen flex flex-col justify-center items-center space-y-5 w-full xl:justify-center lg:flex-row xl:space-x-5 xl:space-y-0">
+      <div className='flex flex-col items-center justify-center space-y-10 px-5 sm:px-10 pt-0 pb-10 md:pb-16 xl:px-36'>
+        <div className="bg-white p-10 md:py-12 md:px-20 rounded-[50px] font-sans text-darkBlueGreen flex flex-col justify-center items-center space-y-5 w-full xl:justify-center md:flex-row xl:space-x-5 xl:space-y-0">
           <img src={homeImg} alt="Home" className='flex w-[250px] xl:w-[350px]' />
 
           <div className="flex flex-col space-y-5 max-w-lg ">
@@ -81,9 +81,9 @@ function Home() {
 
             </div>
             {isSuccess ? (
-              <p className="font-black text-md text-left xl:text-center xl:text-lg">{data.activity}</p>
+              <p className="font-black text-md text-left md:text-center xl:text-lg">{data.activity}</p>
             ) : (
-              <p className="font-black text-md text-left xl:text-center xl:text-lg">Go shopping</p>
+              <p className="font-black text-md text-left md:text-center xl:text-lg">Go shopping</p>
             )}
 
                 <div className='lg:max-w-[250px]'>
@@ -92,7 +92,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col w-full space-y-10 justify-between xl:space-x-10 xl:space-y-0 xl:flex-row">
+        <div className="flex flex-col w-full space-y-10 justify-between md:space-x-10 md:space-y-0 md:flex-row">
 
           <div className="flex-1 flex-col items-center w-full justify-between space-y-10 md:space-y-0 md:space-x-10 md:flex-row xl:w-1/2 ">
             <div className="bg-darkenedSkyBlue rounded-[50px] h-full w-full p-10 flex flex-col space-y-5 items-center justify-center md:flex-row md:space-x-10 md:space-y-0">
@@ -158,7 +158,7 @@ function Home() {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

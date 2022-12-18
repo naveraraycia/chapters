@@ -91,9 +91,9 @@ function EditProfile() {
   }
 
   return (
-    <>
+    <div className='flex flex-col justify-between min-h-screen'> 
       <Navbar />
-      <div className='flex flex-col items-center justify-center space-y-20 px-5 pt-0 pb-10 md:pb-16 md:px-36'>
+      <div className='flex flex-col items-center justify-center space-y-20 px-5 pt-0 pb-10 sm:px-10 md:pb-16 xl:px-36'>
         <div className="bg-white p-10 md:py-12 md:px-20 rounded-[50px] font-sans text-darkBlueGreen flex flex-col justify-center items-center space-y-5 w-full xl:justify-center lg:flex-row xl:space-x-5 xl:space-y-0">
             
             <div className="flex flex-col space-y-5 order-2 lg:order-1">
@@ -142,7 +142,7 @@ function EditProfile() {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

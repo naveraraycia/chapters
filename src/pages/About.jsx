@@ -8,10 +8,10 @@ import storageImg from '../assets/svg/storage.svg'
 
 function About() {
   return (
-    <>
+    <div className='flex flex-col justify-between min-h-screen'>
       <Navbar />
 
-      <section id='description' className="px-5 py-10 my-32 md:px-36">
+      <section id='description' className="px-5 py-10 my-32 sm:px-10 xl:px-36">
         <div className="flex flex-col items-start space-y-10">
           <div className="flex flex-col space-y-5">
             <h1 className="font-sans text-4xl font-black text-darkBlueGreen text-center xl:text-left xl:text-5xl xl:leading-[130.5%]">What is chapters?</h1>
@@ -21,7 +21,7 @@ function About() {
       </section>
 
       <section id='app-features' className="">
-        <div className="px-5 py-10 mt-56 mb-10 md:px-36">
+        <div className="px-5 py-10 mt-56 mb-10 sm:px-10 xl:px-36">
           <h1 className="font-sans text-4xl font-black text-darkBlueGreen text-center xl:text-5xl xl:leading-[130.5%]">What the app offers?</h1>
 
           <div className="flex flex-col my-20 space-y-32 items-center justify-center lg:flex-row lg:space-y-0 lg:space-x-48">
@@ -33,12 +33,12 @@ function About() {
         <img src={bottomWave} className='w-full' />
       </section>
 
-      <section id="contact-form" className="px-5 bg-white pb-36 pt-28 xl:pt-10 md:px-36">
+      <section id="contact-form" className="px-5 bg-white pb-36 pt-28 sm:px-10 xl:pt-10 xl:px-36">
         <ContactForm />
       </section>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

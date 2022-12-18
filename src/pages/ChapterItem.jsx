@@ -85,8 +85,8 @@ function ChapterItem() {
   }
 
   return (
-    <> 
-    <div id="entry" className='flex flex-col space-y-10 px-5 py-10 md:py-16 md:px-36 font-sans text-darkBlueGreen'>
+    <div className='flex flex-col justify-between min-h-screen'> 
+    <div id="entry" className='flex flex-col space-y-10 px-5 py-10 font-sans text-darkBlueGreen sm:px-10 md:py-16 xl:px-36'>
 
       <div className='flex flex-col space-y-3 items-center justify-between font-sans text-darkBlueGreen sm:flex-row sm:space-y-0'>
           <p className=" z-40 text-5xl font-black hover:cursor-pointer" onClick={()=> navigate('/') }>chapters</p>
@@ -132,7 +132,7 @@ function ChapterItem() {
           </div>
         </div>
 
-        <div className="flex flex-col py-6 px-12 lg:px-20 bg-white h-fit w-full rounded-[50px]">
+        <div className="flex flex-col py-6 px-8 lg:px-10 bg-white h-fit w-full rounded-[50px]">
           
           <p className="font-sans w-full text-right text-lg font-extrabold">{entry.timestamp}</p>
           <textarea name="message" id="text" cols="30" rows="13" className={`${isDisabled && 'hover:cursor-default'} w-full text-lg text-darkBlueGreen font-sans placeholder:text-lg placeholder:font-sans placeholder:text-[rgba(0,151,167,.54)] focus:outline-none bg-transparent`} placeholder='Write today’s chapter here ...' onChange={onChange} value={isDisabled ? entry.text : text}  readOnly={isDisabled}></textarea>
@@ -142,7 +142,7 @@ function ChapterItem() {
     </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

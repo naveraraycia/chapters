@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <>
       <Navbar />
-      <div className="p-5 md:px-36">
+      <div className="py-5 px-5 sm:px-10 xl:px-36">
         <div className="flex flex-col items-center xl:items-start justify-between space-y-10 xl:flex-row md:space-y-0 md:space-x-10">
           <div className="flex flex-col space-y-10 order-2 xl:order-1">
             <div className="flex flex-col space-y-5">

@@ -47,10 +47,10 @@ function Navbar() {
 
   return (
     <>
-    <nav className='flex items-center justify-between px-5 py-10 md:py-16 md:px-36'>
+    <nav className='flex items-center justify-between px-5 py-10 sm:px-10 md:py-16 xl:px-36'>
       <p className="font-sans z-40 text-5xl font-black text-darkBlueGreen hover:cursor-pointer" onClick={()=> navigate('/') }>chapters</p>
 
-      <ul className='hidden h-10 font-sans text-2xl font-bold lg:flex lg:items-center lg:space-x-8 '>
+      <ul className='hidden h-10 font-sans text-2xl font-bold md:flex md:items-center md:space-x-8 '>
         
         {user ? (
           <>   
@@ -81,7 +81,7 @@ function Navbar() {
       </ul>
 
       {/* Hamburger icon */}
-      <div className="lg:hidden">
+      <div className="md:hidden">
           <button id="menu-btn" onClick={toggleMenu} type="button" className="z-40 block hamburger lg:hidden focus:outline-none">
             <span className='hamburger-top bg-darkBlueGreen'></span>
             <span className='hamburger-middle bg-darkBlueGreen'></span>
@@ -91,7 +91,7 @@ function Navbar() {
     </nav>
 
     {/* Mobile Menu */}
-    <ul id="menu" className="absolute top-0 bottom-0 left-0 hidden flex-col items-center w-full min-h-screen font-sans font-bold text-2xl px-5 md:px-36 pt-40 space-y-10 mobile-overlay">
+    <ul id="menu" className="absolute top-0 bottom-0 left-0 hidden flex-col items-center w-full min-h-screen font-sans font-bold text-2xl px-5  pt-40 space-y-10 mobile-overlay sm:px-10 xl:px-36">
 
     {user ? (
       <>
