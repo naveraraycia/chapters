@@ -47,7 +47,7 @@ function Navbar() {
 
   return (
     <>
-    <nav className='flex items-center justify-between px-5 py-10 sm:px-10 md:py-16 xl:px-36'>
+    <nav className='flex items-center max-w-[1800px] mx-auto w-full justify-between px-5 py-10 sm:px-10 md:py-16'>
       <p className="font-sans z-40 text-5xl font-black text-darkBlueGreen hover:cursor-pointer" onClick={()=> navigate('/') }>chapters</p>
 
       <ul className='hidden h-10 font-sans text-2xl font-bold md:flex md:items-center md:space-x-8 '>

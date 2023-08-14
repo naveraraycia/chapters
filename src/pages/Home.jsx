@@ -67,7 +67,7 @@ function Home() {
     <div className='flex flex-col justify-between min-h-screen'>
       <Navbar />
 
-      <div className='flex flex-col items-center justify-center space-y-10 px-5 sm:px-10 pt-0 pb-10 md:pb-16 xl:px-36'>
+      <div className='flex flex-col items-center mx-auto w-full max-w-[1800px]  justify-center space-y-10 px-5 sm:px-10 pt-0 pb-10 md:pb-16'>
         <div className="bg-white p-10 md:py-12 md:px-20 rounded-[50px] font-sans text-darkBlueGreen flex flex-col justify-center items-center space-y-5 w-full xl:justify-center md:flex-row xl:space-x-5 xl:space-y-0">
           <img src={homeImg} alt="Home" className='flex w-[250px] xl:w-[350px]' />
 

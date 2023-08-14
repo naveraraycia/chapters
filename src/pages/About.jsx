@@ -11,7 +11,7 @@ function About() {
     <div className='flex flex-col justify-between min-h-screen'>
       <Navbar />
 
-      <section id='description' className="px-5 py-10 my-32 sm:px-10 xl:px-36">
+      <section id='description' className="px-5 max-w-[1800px] w-full self-center py-10 my-32 sm:px-10 ">
         <div className="flex flex-col items-start space-y-10">
           <div className="flex flex-col space-y-5">
             <h1 className="font-sans text-4xl font-black text-darkBlueGreen text-center xl:text-left xl:text-5xl xl:leading-[130.5%]">What is chapters?</h1>

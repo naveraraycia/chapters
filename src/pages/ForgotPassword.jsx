@@ -43,7 +43,7 @@ function ForgotPassword() {
   return (
     <>
     
-    <div className=' lg:pt-16 lg:px-36 flex flex-col lg:space-y-10 justify-center lg:items-center'>
+    <div className='justify-center mx-auto w-full max-w-[1800px] lg:pt-16 lg:px-36 flex flex-col lg:space-y-10  lg:items-center'>
       <p className="hidden font-sans z-40 text-5xl self-start font-black text-darkBlueGreen hover:cursor-pointer lg:block" onClick={()=> navigate('/') }>chapters</p>
 
     <div className="h-screen py-10 px-5 lg:py-16 md:px-32 font-sans lg:h-auto lg:w-fit flex flex-col items-center justify-start space-y-5 bg-white lg:rounded-[50px]">

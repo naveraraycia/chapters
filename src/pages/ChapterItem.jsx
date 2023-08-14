@@ -86,7 +86,7 @@ function ChapterItem() {
 
   return (
     <div className='flex flex-col justify-between min-h-screen'> 
-    <div id="entry" className='flex flex-col space-y-10 px-5 py-10 font-sans text-darkBlueGreen sm:px-10 md:py-16 xl:px-36'>
+    <div className='flex flex-col space-y-10 px-5 mx-auto w-full max-w-[1800px] py-10 font-sans text-darkBlueGreen sm:px-10 md:py-16'>
 
       <div className='flex flex-col space-y-3 items-center justify-between font-sans text-darkBlueGreen sm:flex-row sm:space-y-0'>
           <p className=" z-40 text-5xl font-black hover:cursor-pointer" onClick={()=> navigate('/') }>chapters</p>

@@ -72,7 +72,7 @@ function Login() {
         </div>
         
         
-          <div className="flex flex-col space-y-5 w-full bg-white min-h-screen items-center justify-center lg:justify-center p-5 md:px-24 md:py-16 lg:w-1/2">
+        <div className="flex flex-col space-y-5 w-full bg-white min-h-screen items-center justify-center lg:justify-center p-5 md:px-24 md:py-16 lg:w-1/2">
 
             <div className="flex flex-col space-y-4 items-center justify-center text-darkBlueGreen">
               <h1 className="font-sans font-black text-4xl text-center xl:text-5xl">Welcome Back</h1>
@@ -111,7 +111,7 @@ function Login() {
               </div>
             </div>
           </form>
-          </div>
+        </div>
       </div>
   )
 }
